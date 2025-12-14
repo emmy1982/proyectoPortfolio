@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Personal - Diseñador Web & Director de Arte">
+    <title>Saul Mendez - Portfolio</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navegación Superior -->
+    <nav class="top-nav">
+        <ul>
+            <li><a href="#design">Design & Strategy</a></li>
+            <li><a href="#about">Conóceme</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </nav>
+
+    <!-- Menú Fullscreen -->
+    <div class="menu-overlay" id="menuOverlay">
+        <div class="menu-close" id="menuClose">
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="menu-fullscreen">
+            <ul>
+                <li><a href="#design" class="menu-link">Design & Strategy</a></li>
+                <li><a href="#about" class="menu-link">Conóceme</a></li>
+                <li><a href="#projects" class="menu-link">Proyectos</a></li>
+                <li><a href="#contact" class="menu-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Redes Sociales Laterales -->
+    <aside class="social-sidebar">
+        <div class="social-links">
+            <a href="#" class="social-link">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+            <a href="#" class="social-link">
+                <i class="fab fa-twitter"></i>
+                <span>Twitter</span>
+            </a>
+            <a href="#" class="social-link">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+        </div>
+    </aside>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-name">Saul Mendez</h1>
+            <p class="hero-subtitle">// Web Designer<br>Art Director</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="about-title">
+                    Soy un <span class="text-accent letter-spacing">diseñador versátil</span> que 
+                    <span class="text-accent letter-spacing">se asocia con emprendedores para convertir ideas en productos reales.</span> 
+                    Me enfoco en interfaces claras, decisiones precisas y ejecución rápida.
+                </h2>
+                <div class="box-about">
+                    <p class="about-description">
+                        Llevando tu visión a la realidad rápida y eficientemente. Ya sea construyendo 
+                        desde cero o ampliando el equipo existente, puedo saltar y llevar 
+                        tu producto o idea desde el concepto hasta el lanzamiento en semanas.
+                    </p>
+                    <a href="#projects" class="btn-work letter-spacing">Ver mi Trabajo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="design" class="services-section">
+        <div class="container">
+            <h3 class="section-label">Servicios</h3>
+            
+            <div class="service-item">
+                <div class="service-number">01</div>
+                <div class="service-content">
+                    <h2 class="service-title">Branding & Marketing</h2>
+                    <p class="service-description">
+                        Creando identidades de marca cohesivas, estrategia de contenido visual, 
+                        y mensajería en una experiencia online inolvidable.
+                    </p>
+                    <ul class="service-list">
+                        <li>
+                            <span>Brand Strategy and Messaging</span>
+                            <span class="item-number">01.</span>
+                        </li>
+                        <li>
+                            <span>Logo Design</span>
+                            <span class="item-number">02.</span>
+                        </li>
+                        <li>
+                            <span>Visual Identity</span>
+                            <span class="item-number">03.</span>
+                        </li>
+                        <li>
+                            <span>Brand Guidelines & Frameworks</span>
+                            <span class="item-number">04.</span>
+                        </li>
+                        <li>
+                            <span>Marketing materials</span>
+                            <span class="item-number">05.</span>
+                        </li>
+                        <li>
+                            <span>Motion Design</span>
+                            <span class="item-number">06.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-number">02</div>
+                <div class="service-content">
+                    <h2 class="service-title">Product Design</h2>
+                    <p class="service-description">
+                        Diseñando experiencias de usuario intuitivas y atractivas que 
+                        convierten visitantes en clientes fieles.
+                    </p>
+                    <ul class="service-list">
+                        <li>
+                            <span>User Research & Analysis</span>
+                            <span class="item-number">01.</span>
+                        </li>
+                        <li>
+                            <span>UX/UI Design</span>
+                            <span class="item-number">02.</span>
+                        </li>
+                        <li>
+                            <span>Prototyping & Testing</span>
+                            <span class="item-number">03.</span>
+                        </li>
+                        <li>
+                            <span>Design Systems</span>
+                            <span class="item-number">04.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-number">03</div>
+                <div class="service-content">
+                    <h2 class="service-title">Web Development</h2>
+                    <p class="service-description">
+                        Construyendo sitios web modernos, rápidos y responsive que 
+                        destacan en cualquier dispositivo.
+                    </p>
+                    <ul class="service-list">
+                        <li>
+                            <span>Frontend Development</span>
+                            <span class="item-number">01.</span>
+                        </li>
+                        <li>
+                            <span>Responsive Design</span>
+                            <span class="item-number">02.</span>
+                        </li>
+                        <li>
+                            <span>Performance Optimization</span>
+                            <span class="item-number">03.</span>
+                        </li>
+                        <li>
+                            <span>CMS Integration</span>
+                            <span class="item-number">04.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h3 class="section-label">Proyectos Seleccionados</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('../images/academia.png');"></div>
+                    <div class="project-info">
+                        <h3>Academia</h3>
+                        <p>Branding, Web Design</p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('../images/barberia.png');"></div>
+                    <div class="project-info">
+                        <h3>Barbería</h3>
+                        <p>UI/UX, Development</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('../images/clinicaPsicologia.png');"></div>
+                    <div class="project-info">
+                        <h3>Clínica Psicología</h3>
+                        <p>Web Design, Healthcare</p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('../images/deco.png');"></div>
+                    <div class="project-info">
+                        <h3>Deco</h3>
+                        <p>Art Direction, Design</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('../images/enerbye.png');"></div>
+                    <div class="project-info">
+                        <h3>Enerbye</h3>
+                        <p>Branding, Corporate</p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('../images/restaurante.png');"></div>
+                    <div class="project-info">
+                        <h3>Restaurante</h3>
+                        <p>Web Design, Food & Beverage</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('../images/studioTattoo.png');"></div>
+                    <div class="project-info">
+                        <h3>Studio Tattoo</h3>
+                        <p>Branding, Web Design</p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('../images/webArquitectura.png');"></div>
+                    <div class="project-info">
+                        <h3>Web Arquitectura</h3>
+                        <p>Architecture, Portfolio</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('../images/barbershop.png');"></div>
+                    <div class="project-info">
+                        <h3>Web Arquitectura</h3>
+                        <p>Architecture, Portfolio</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('../images/construction.png');"></div>
+                    <div class="project-info">
+                        <h3>Web Arquitectura</h3>
+                        <p>Architecture, Portfolio</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('../images/clinidental.png');"></div>
+                    <div class="project-info">
+                        <h3>Web Arquitectura</h3>
+                        <p>Architecture, Portfolio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-left">
+                    <h3 class="section-label">CONTACTO</h3>
+                    <h2 class="contact-title">Estoy siempre abierto a emprender nuevos proyectos, oportunidades creativas o simplemente conversar sobre diseño web.</h2>
+                    <a href="mailto:emmyjose82@hotmail.com" class="btn-work">HABLEMOS</a>
+                </div>
+                <div class="contact-right">
+                    <div class="contact-info-item">
+                        <h4 class="contact-label">Email</h4>
+                        <a href="mailto:emmyjose82@hotmail.com" class="contact-link">Saulmendez102@gmail.com</a>
+                    </div>
+                    <div class="contact-info-item">
+                        <h4 class="contact-label">Teléfono</h4>
+                        <a href="tel:657437142" class="contact-link">+52 689 456 142</a>
+                    </div>
+                    <div class="contact-info-item">
+                        <h4 class="contact-label">Redes Sociales</h4>
+                        <div class="contact-socials">
+                            <a href="#" class="contact-social-link">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="#" class="contact-social-link">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="#" class="contact-social-link">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Saul Mendez. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
