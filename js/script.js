@@ -527,5 +527,46 @@ if (typeof ScrollToPlugin !== 'undefined') {
     });
 }
 
+// ============================================
+// BOTÓN SCROLL TO TOP
+// ============================================
+
+const scrollToTopBtn = document.getElementById('scrollToTop');
+
+// Mostrar/ocultar botón según scroll
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) {
+        scrollToTopBtn.classList.add('visible');
+    } else {
+        scrollToTopBtn.classList.remove('visible');
+    }
+});
+
+// Funcionalidad del botón con animación GSAP
+scrollToTopBtn.addEventListener('click', () => {
+    gsap.to(window, {
+        duration: 1.5,
+        scrollTo: { y: 0, autoKill: true },
+        ease: 'power3.inOut'
+    });
+});
+
+// Animación hover con GSAP
+scrollToTopBtn.addEventListener('mouseenter', () => {
+    gsap.to(scrollToTopBtn, {
+        scale: 1.1,
+        duration: 0.3,
+        ease: 'back.out(1.7)'
+    });
+});
+
+scrollToTopBtn.addEventListener('mouseleave', () => {
+    gsap.to(scrollToTopBtn, {
+        scale: 1,
+        duration: 0.3,
+        ease: 'power2.out'
+    });
+});
+
 console.log('%c🚀 GSAP Animations Loaded Successfully!', 'color: #ec523e; font-size: 16px; font-weight: bold;');
 
